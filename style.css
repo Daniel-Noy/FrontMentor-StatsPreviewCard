@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 90vh;
+
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    margin: 5% 5% 30px;
+    border-radius: 10px;
+
+    max-width: 1000px;
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+    height: 220px;
+
+    background-image:linear-gradient(to right, #8e2de280, #8e2de280), url(images/image-header-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.info{
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-main, [class="uppercase"]{
+    color: hsl(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+.info-main, .info-head{
+    padding: 10px;
+}
+
+.features{
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.features-item{
+    margin: 30px 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .container{
+        max-height: 400px;
+        flex-direction: row-reverse;
+    }
+
+    .image{
+        width: 50%;
+        height: 100%;
+    }
+
+    .info{
+        width: 50%;
+    }
+
+    .features{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .features-item{
+        margin: 0 25px;
+    }
+
+
+}
